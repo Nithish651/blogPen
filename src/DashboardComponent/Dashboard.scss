@@ -1,0 +1,22 @@
+.center-box {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 1 rem;
+  margin-top: 2%;
+}
+
+.posts {
+  width: 100%;
+  flex-basis: 100px;
+
+  border: 2px solid lightblue;
+  z-index: -1 !important;
+  margin-bottom: 5%;
+}
+
+@media only screen and (min-width: 800px) {
+  .center-box {
+    margin-top: 7%;
+  }
+}
