@@ -16,6 +16,7 @@ $primaryBackground: #343a40;
   top: 5;
   left: -100%;
   transition: 1000 ms;
+  z-index: 1;
 }
 
 .side-bar-active {

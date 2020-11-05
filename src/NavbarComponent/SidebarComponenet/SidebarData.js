@@ -23,7 +23,7 @@ export const SidebarData = [
   {
     title: "Reading List",
     path: "/saved-posts",
-    icon: <FaIcons.FaStickyNote />,
+    icon: <FaIcons.FaBookmark />,
     cName: "nav-text",
   },
 ];

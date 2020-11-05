@@ -1,0 +1,78 @@
+@mixin top-margin($remValue) {
+  margin-top: $remValue !important;
+}
+
+@mixin bottom-margin($remValue) {
+  margin-bottom: $remValue;
+}
+
+.header-post {
+  @include top-margin(55px);
+}
+
+.posts {
+  width: 100%;
+  flex-basis: 5em;
+  justify-content: flex-start;
+  border: 2px solid lightblue;
+  margin: 10px 10px 10px 0;
+
+  font-family: "Lato", "Slabo 27px", sans-serif;
+  display: flex;
+}
+
+.posts:hover {
+  box-shadow: 5px 10px 8px #888888;
+}
+
+.title-image,
+.menu-image {
+  vertical-align: middle;
+  width: 4rem;
+  height: 4rem;
+}
+
+.postTitle {
+  font-size: 1.25rem;
+}
+
+.postDetail {
+  font-size: 0.95rem;
+  color: orangered;
+}
+.postDetail-Date {
+  font-size: 0.95rem;
+}
+
+.tooltipText {
+  font-family: "Lato", "Slabo 27px", sans-serif;
+  font-size: 0.75rem;
+}
+
+.post-mob-menu {
+  display: none;
+}
+
+.mob-menu-container {
+  list-style: none;
+  margin-right: 1.5rem !important;
+}
+.show {
+  display: block !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+@media screen and (max-width: 768px) {
+  .postDetail-mob,
+  .menu-container {
+    display: none !important;
+  }
+
+  .post-mob-menu {
+    display: block;
+    margin: 5px 5px;
+  }
+}

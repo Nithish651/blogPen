@@ -1,22 +1,33 @@
-.center-box {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  padding-top: 1 rem;
-  margin-top: 2%;
+@mixin top-margin($remValue) {
+  margin-top: $remValue !important;
 }
 
-.posts {
-  width: 100%;
-  flex-basis: 100px;
+@mixin bottom-margin($remValue) {
+  margin-bottom: $remValue;
+}
 
-  border: 2px solid lightblue;
-  z-index: -1 !important;
-  margin-bottom: 5%;
+.header-post {
+  @include top-margin(45px);
+}
+
+.center-box {
+  display: flex;
+  margin: 0;
+  padding: 5px;
+  height: 100vh;
 }
 
 @media only screen and (min-width: 800px) {
-  .center-box {
-    margin-top: 7%;
+}
+
+@media screen and (max-width: 768px) {
+  .post-status {
+    display: none;
+  }
+  .menu-image {
+    display: none;
+  }
+  .post-mob-menu {
+    display: block;
   }
 }
